@@ -1,0 +1,6 @@
+test:
+    override:
+        - pwd ~
+        - ifconfig
+        - echo hello world
+        - exit 0
