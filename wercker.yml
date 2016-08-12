@@ -1,4 +1,4 @@
-box: python3.4-werckerbox
+box: wercker/python
 
 # Build definition
 build:
