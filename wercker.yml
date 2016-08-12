@@ -1,4 +1,4 @@
-box: wercker/python
+box: python:3.4-slim
 services:
     # - wercker/postgresql # Don't forget to add your databases as a service
 
