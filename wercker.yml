@@ -13,13 +13,3 @@ build:
            echo "from location $(which python)"
            echo "pip freeze: $(pip freeze)"
 
-    - script:
-        name: update pelican-plugins
-        code: |-
-          cd pelican-plugins
-          git submodule update --init
-          cd ..
-
-    - script:
-        name: build blog by Pelican
-        code: make html publish
