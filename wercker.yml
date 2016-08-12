@@ -1,20 +1,24 @@
-
-box: python:3.5.1
-
 build:
-
   steps:
-
     - virtualenv:
-        name: setup virtual environment
-        install_wheel: false # Enable wheel to speed up builds (experimental)
+        python_location: /usr/bin/python3.4
 
-    # A step that executes `pip install` command.
     - pip-install
 
+    - script:
+        name: echo python informatoin
+        code: |
+           echo "python version $(python -V) running"
+           echo "from location $(which python)"
+           echo "pip freeze: $(pip freeze)"
 
     - script:
-        name: echo python information
-        code: |
-          echo "python version $(python --version) running"
-          echo "pip version $(pip --version) running"
+        name: update pelican-plugins
+        code: |-
+          cd pelican-plugins
+          git submodule update --init
+          cd ..
+
+    - script:
+        name: build blog by Pelican
+        code: make html publish
