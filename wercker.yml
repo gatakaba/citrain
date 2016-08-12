@@ -1,4 +1,4 @@
-box: python
+box: python:3.4-slim
 
 # Build definition
 build:
