@@ -14,6 +14,7 @@ test:
         - pep8 hoge
     override:
         - python -V
+        - pip list
         - pwd ~
         - ifconfig
         - echo hello world
