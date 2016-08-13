@@ -1,7 +1,7 @@
 machine:
-    post:
-        - pyenv install --skip-existing 3.5.0
-        - pyenv local  3.5.0
+  python:
+    version: 3.5.0
+
 
     
 dependencies:
