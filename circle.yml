@@ -7,6 +7,8 @@ dependencies:
     - pip install -r ./requirements.txt
     
 test:
+    pre:
+        - pep8 hoge
     override:
         - pwd ~
         - ifconfig
