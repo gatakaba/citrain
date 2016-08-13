@@ -1,2 +1,4 @@
 simplejson
 boto
+numpy
+scipy
