@@ -1,6 +1,6 @@
 machine:
   python:
-    version: 3.5.1
+
     
 dependencies:
   pre:
@@ -10,6 +10,7 @@ test:
     pre:
         - pep8 hoge
     override:
+        - python -v
         - pwd ~
         - ifconfig
         - echo hello world
