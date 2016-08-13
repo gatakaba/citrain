@@ -7,6 +7,4 @@ class Sample():
 
     # テスト対象のメソッド
     def return_poyo(self):
-
-
-        return 'poy'
+    return 'poy'
