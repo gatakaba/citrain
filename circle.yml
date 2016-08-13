@@ -1,7 +1,7 @@
 machine:
     post:
-        - pyenv install --skip-existing 3.5.1
-        - pyenv global  3.5.1
+        - pyenv install --skip-existing 3.5.0
+        - pyenv global  3.5.0
 
     
 dependencies:
